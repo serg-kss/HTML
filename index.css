@@ -8,7 +8,6 @@ body {
 
 .page {
     min-height: 100%;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
 }
@@ -16,9 +15,11 @@ body {
 .header { 
    background-color: aliceblue;
 }
+
 .content {
     flex: 1 1 auto;
 }
+
 .headerTop {
     display: flex;
     justify-content: space-between;
@@ -39,10 +40,12 @@ body {
 .nav {
     background-color: brown;
 }
+
 .nav__link {
     padding: 10px;
     text-decoration: none;
 }
+
 .basket__wrapper {
     display: inline-flex;
     align-items: center;

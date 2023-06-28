@@ -14,15 +14,15 @@
         <header class="header">
             <div class="headerTop">
                 <div class="logo">
-                    <img class="logo__img" src="asset/logo.png" alt="some logo here">  
+                    <a href="#"><img class="logo__img" src="asset/logo.png" alt="some logo here"></a>
                 </div>
-                <div class="nav">
-                    <nav class="nav__menu">
-                        <a class="nav__link" href="">СТУДИЯ</a>
-                        <a class="nav__link" href="">КЛИЕНТЫ</a>
-                        <a class="nav__link" href="">МАГАЗИН</a>
-                        <a class="nav__link" href="">КОНТАКТЫ</a>
-                    </nav>
+                <div class="nav">                  
+                    <ul class="nav__menu">
+                        <li class="nav__list"><a class="nav__link" href="#">СТУДИЯ</a></li>
+                        <li class="nav__list"><a class="nav__link" href="#">КЛИЕНТЫ</a></li>
+                        <li class="nav__list"><a class="nav__link" href="#">МАГАЗИН</a></li>
+                        <li class="nav__list"><a class="nav__link" href="#">КОНТАКТЫ</a></li>
+                    </ul>                     
                 </div>
                 <div class="basket">
                     <div class="basket__wrapper">
@@ -32,11 +32,11 @@
                 </div>
             </div>
             <div class="headerBottom">
-                <div class="slogan">
+                <section class="slogan">
                     <h3 class="slogan__title">ДОЛГО, ДОРОГО, СКУРПУЛЕЗНО</h3>
                     <p class="slogan__message">Математически выверенный дизайн для вашего сайта и мобильного приложения</p>
                     <a class="slogan__link" href="">УЗНАТЬ БОЛЬШЕ</a>                
-                </div>
+                </section>
                 <div class="slider">
                     <div class="slider__pictures">
                         <img class="slider__img" src="" alt="slider picture">
@@ -44,9 +44,9 @@
                         <!--<img class="slider__img" src="" alt="">-->
                     </div>
                     <div class="slider__dots">
-                        <span class="slider__dot active"></span>
-                        <span class="slider__dot"></span>
-                        <span class="slider__dot"></span>
+                        <input class="slider__dot active" type="radio" name="dot">
+                        <input class="slider__dot active" type="radio" name="dot">
+                        <input class="slider__dot active" type="radio" name="dot">
                     </div>
                 </div>
             </div>
@@ -55,15 +55,15 @@
 
         </div>
         <footer class="footer">           
-                <div class="socialLinks">
-                    <a class="socialLinks__link" href=""><img src="asset/playstation.png" alt="logo playstation"></a>
-                    <a class="socialLinks__link" href=""><img src="asset/facebook.png" alt="logo facebook"></a>
-                    <a class="socialLinks__link" href=""><img src="asset/instagram.png" alt="logo instagram"></a>
-                </div>
-                <div class="message">
-                    <h3 class="message__title">Давайте дружить, это выгодно!</h3>
-                    <span class="message__text">Скидка 10% для друзей из социальных сетей</span>
-                </div>
+            <ul class="socialLinks">
+                <li><a class="socialLinks__link" href="#"><img src="asset/playstation.png" alt="logo playstation"></a></li>
+                <li><a class="socialLinks__link" href="#"><img src="asset/facebook.png" alt="logo facebook"></a></li>
+                <li><a class="socialLinks__link" href="#"><img src="asset/instagram.png" alt="logo instagram"></a></li>
+            </ul>
+            <section class="message">
+                <h3 class="message__title">Давайте дружить, это выгодно!</h3>
+                <span class="message__text">Скидка 10% для друзей из социальных сетей</span>
+            </section>
         </footer> 
     </div>   
 </body>
