@@ -41,6 +41,14 @@ body {
     background-color: brown;
 }
 
+.nav__menu {
+    display: flex;
+}
+
+.nav__list {
+    list-style-type: none;
+}
+
 .nav__link {
     padding: 10px;
     text-decoration: none;
@@ -88,4 +96,12 @@ body {
 .message {
     display: flex;
     flex-direction: column;
+}
+
+.socialLinks {
+    display: flex;
+}
+
+.socialLinks__list{
+    list-style-type: none;
 }
