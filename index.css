@@ -105,3 +105,18 @@ body {
 .socialLinks__list{
     list-style-type: none;
 }
+
+.order {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.order_window {
+    padding: 20px;
+}
+
+.line {
+    margin-top: 50px;
+    opacity: 0.5;
+}
