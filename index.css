@@ -1,0 +1,64 @@
+body {
+    font-family: 'Roboto', sans-serif;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.headerTop {
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    align-items: center;
+}
+
+.logo {
+    background-color: brown;
+}
+
+.logo__img {
+    width: 70%;
+    height: 70%;
+    padding: 10px;
+}
+
+.nav {
+    background-color: brown;
+}
+.nav__link {
+    padding: 10px;
+    text-decoration: none;
+}
+.basket__wrapper {
+    display: inline-flex;
+    align-items: center;
+    background-color: brown;
+}
+
+.basket__icon {
+    width: 20%;
+    height: 20%;
+    padding: 10px;
+}
+
+.basket__link {
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+.headerBottom {
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+}
+
+.slogan {
+    width: 200px;
+}
+
+.slider__img {
+    width: max-content;
+    height: 300px;
+}
