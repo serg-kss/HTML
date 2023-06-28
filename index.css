@@ -103,6 +103,7 @@ body {
 }
 
 .socialLinks__list{
+    padding-right: 10px;
     list-style-type: none;
 }
 
@@ -119,4 +120,20 @@ body {
 .line {
     margin-top: 50px;
     opacity: 0.5;
+}
+
+.aboutUs {
+    display: flex;
+}
+
+.bottom {
+    display: flex;
+}
+
+.bottom section {
+    padding-right: 15px;
+}
+
+.bottom section p {
+    font-size: x-small;
 }
