@@ -51,3 +51,30 @@ body {
     padding: 10px;
     text-decoration: none;
 }
+
+.headerBottom {
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content__left {
+    display: flex;
+    flex-direction: column;
+}
+
+.content__mid {
+    display: flex;
+    flex-direction: column;
+}
+
+.content__right {
+    display: flex;
+    flex-direction: column;
+}
