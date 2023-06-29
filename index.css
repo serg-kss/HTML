@@ -1,15 +1,14 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 50px;
-    margin-right: 50px; 
+    font-family: 'Roboto', sans-serif; 
 }
 
 .page {
     min-height: 100%;
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .header { 
@@ -90,7 +89,10 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: end;
-    
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;  
 }
 
 .message {
@@ -137,3 +139,25 @@ body {
 .bottom section p {
     font-size: x-small;
 }
+
+.customers {
+    display: flex;
+}
+
+.map {
+    display: flex;
+    background-image: url("asset/map.png");
+}
+
+.map__address {
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.map__address p {
+    font-size: x-small;
+}
+
