@@ -12,7 +12,7 @@ body {
 }
 
 .header { 
-   background-color: aliceblue;
+   background-color: white;
 }
 
 .content {
@@ -22,22 +22,13 @@ body {
 .headerTop {
     display: flex;
     justify-content: space-between;
-    background-color: aqua;
     align-items: center;
-}
-
-.logo {
-    background-color: brown;
 }
 
 .logo__img {
     width: 70%;
     height: 70%;
     padding: 10px;
-}
-
-.nav {
-    background-color: brown;
 }
 
 .nav__menu {
@@ -56,7 +47,6 @@ body {
 .basket__wrapper {
     display: inline-flex;
     align-items: center;
-    background-color: brown;
 }
 
 .basket__icon {
@@ -73,7 +63,6 @@ body {
 .headerBottom {
     display: flex;
     justify-content: space-between;
-    background-color: blue;
 }
 
 .slogan {
@@ -141,8 +130,21 @@ body {
 }
 
 .customers {
+    margin-top: 30px;
     display: flex;
+    justify-content: space-around;
 }
+
+.customers div {
+    padding: 20px;
+    border-right: 1px solid grey;
+    flex-grow: 1;
+}
+
+.customers__wrapper {
+    border-style: hidden;
+}
+
 
 .map {
     display: flex;
