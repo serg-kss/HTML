@@ -148,6 +148,9 @@ body {
 }
 
 .value__top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 260px;
     height: 80px;
     flex-shrink: 0;
