@@ -291,19 +291,23 @@ body {
     text-transform: uppercase;
 }
 
+.aboutUs__right {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutUs__rightTop {
+    display: flex;
+    flex-direction: column;
+}
+
 .aboutUs__rightBottom {
     display: flex;
 }
 
 .dataContainer {
-    display: flex;
-    flex-direction: column;
-}
-
-.dataContainer1 {
-    display: flex;
-    align-items: center;
- 
+    margin-right: 15px;
+    align-items: start;
 }
 
 .amount {
@@ -311,13 +315,6 @@ body {
     font-size: 45px;
     font-style: normal;
     font-weight: 700;
-    line-height: 64px;
-}
-
-.aboutUs__text3Cont {
-    display: flex;
-    width: 119px;
-    flex-direction: column;
 }
 
 .aboutUs__text3 {
@@ -325,15 +322,6 @@ body {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 18px;
-}
-
-.sign {
-    color: #000;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 40px;
 }
 
 .customers {
