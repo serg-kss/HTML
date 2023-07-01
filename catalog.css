@@ -96,6 +96,7 @@ body {
 
 .content__left {
     display: flex;
+    flex-direction: column;
 }
 
 .content__mid {
@@ -138,6 +139,103 @@ body {
     font-weight: 400;
     line-height: 18px;
     margin-right: 15px;
+}
+
+.value {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.value__top {
+    width: 260px;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    background: #EEE;
+}
+
+.value__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.value__text {
+    color: #283136;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+.value__amountWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    background: #EEE;
+}
+
+.value__amount {
+    color: #283136;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.options {
+    margin-top: 30px;
+}
+
+.options__container {
+    display: flex;
+    align-items: center;
+}
+
+.options__text {
+    margin-left: 15px;
+    color: #283136;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+} 
+
+.options__title {
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.form__button {
+    margin-top: 40px;
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    width: 260px;
+    height: 50px;
+    background: #EEE;
+    border: none;
 }
 
 .card {
@@ -385,4 +483,5 @@ body {
     background: #FB565A;
     font-size: 16px;
     color: #EEE;
+    border: none;
 }
