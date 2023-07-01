@@ -48,7 +48,7 @@ body {
     line-height: 30px;
 }
 
-.basket__wrapper {
+.basket {
     display: inline-flex;
     align-items: center;
 }
@@ -152,9 +152,41 @@ body {
     justify-content: center;
     width: 260px;
     height: 80px;
-    flex-shrink: 0;
     border-radius: 3px;
     background: #EEE;
+   
+   
+}
+
+.dot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.15);
+}
+
+.dot__small {
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    background: #ABABAB;
+}
+
+.line1 {
+    width: 115px;
+    height: 2px;
+    background: #00CA74;
+}
+
+.line2 {
+    width: 45px;
+    height: 2px;
+    background: #D7DCDF;
+   
 }
 
 .value__bottom {
@@ -294,15 +326,8 @@ body {
     text-transform: uppercase;
 }
 
-.card__textContainer {
-    display: flex;
-    width: 255px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0; 
-}
-
 .card__text {
+    width: 255px;
     color: #666;
     text-align: center;
     font-size: 16px;
@@ -311,21 +336,15 @@ body {
     line-height: 18px;
 }
 
-.card__linkContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.card__btn {
     width: 200px;
     height: 50px;
-    flex-shrink: 0;
     border-radius: 3px;
     background: #FB565A;
-}
-
-.card__link {
-    text-decoration: none;
     color: white;
     font-weight: bold;
+    font-size: 16px;
+    border: none;
 }
 
 .card__top1 {
@@ -440,15 +459,17 @@ body {
 }
 
 .map {
-    display: flex;
-    background-image: url("asset/map.png");
+    position: relative;
     width: 1440px;
     height: 416px;
-    flex-shrink: 0;
     margin-top: 50px;
 }
 
 .map__address {
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    top: 0;
     background-color: white;
     margin-top: 20px;
     margin-left: 30px;
@@ -457,7 +478,6 @@ body {
     padding-left: 30px;
     width: 319px;
     height: 270px;
-    flex-shrink: 0;
 }
 
 .map__title {
@@ -493,4 +513,8 @@ body {
     font-size: 16px;
     color: #EEE;
     border: none;
+}
+
+.map__button:hover {
+    opacity: .7;
 }

@@ -10,213 +10,195 @@
     <title>Catalog</title>
 </head>
 <body>
-    <div class="page">
+    <section class="page">
         <header class="header">
-            <div class="headerTop">
-                <div class="logo">
-                    <a href="index.html"><img class="logo__img" src="asset/logo.png" alt="some logo here"></a>
-                </div>
-                <div class="nav">                  
-                    <ul class="nav__menu">
-                        <li class="nav__list"><a class="nav__link" href="#">СТУДИЯ</a></li>
-                        <li class="nav__list"><a class="nav__link" href="#">КЛИЕНТЫ</a></li>
-                        <li class="nav__listActive"><a class="nav__link" href="catalog.html">МАГАЗИН</a></li>
-                        <li class="nav__list"><a class="nav__link" href="#">КОНТАКТЫ</a></li>
-                    </ul>                     
-                </div>
-                <div class="basket">
-                    <div class="basket__wrapper">
-                        <img class="basket__icon" src="asset/basket.png" alt="basket picture here">
-                        <a class="basket__link" href="#">КОРЗИНА</a>
-                    </div>
-                </div>
-            </div>
-            <div class="headerBottom">
-                <section class="headerBottom__wrapper">
+            <section class="headerTop">
+                <a href="index.html"><img class="logo__img" src="asset/logo.png" alt="some logo here"></a>                 
+                <ul class="nav__menu">
+                    <li class="nav__list"><a class="nav__link" href="#">СТУДИЯ</a></li>
+                    <li class="nav__list"><a class="nav__link" href="#">КЛИЕНТЫ</a></li>
+                    <li class="nav__listActive"><a class="nav__link" href="catalog.html">МАГАЗИН</a></li>
+                    <li class="nav__list"><a class="nav__link" href="#">КОНТАКТЫ</a></li>
+                </ul>                     
+                <article class="basket">
+                    <img class="basket__icon" src="asset/basket.png" alt="basket picture here">
+                    <a class="basket__link" href="#">КОРЗИНА</a>
+                </article>
+            </section>
+            <article class="headerBottom">
                     <p class="headerBottom__title">МАГАЗИН ГОТОВЫХ ШАБЛОНОВ</p>
-                </section>
-            </div>           
+            </article>           
         </header>
-        <div class="content">
-            <div class="content__left">
-                <div>
-                    <section>
-                        <p>Стоимость:</p>
-                    </section>
-                </div>
+        <section class="content">
+            <section class="content__left">
+                <p>Стоимость:</p>
                 <form action="" method="post">
-                    <div class="value">
-                        <div class="value__top">
-                            <input type="range" name="" id="">
-                        </div>
-                        <div class="value__bottom">
-                            <section class="container">
+                    <section class="value">
+                        <section class="value__top">
+                            <div class="dot">
+                                <div class="dot__small"></div>
+                            </div>
+                            <div class="line1"></div>
+                            <div class="dot">
+                                <div class="dot__small"></div>
+                            </div>
+                            <div class="line2"></div>
+                        </section>
+                        <section class="value__bottom">
+                            <article class="container">
                                 <p class="value__text">от</p>
                                 <div class="value__amountWrapper">
                                     <p class="value__amount">0</p>
                                 </div>
-                            </section>
-                            <section class="container">
+                            </article>
+                            <article class="container">
                                 <p class="value__text">до</p>
                                 <div class="value__amountWrapper">
                                     <p class="value__amount">15 000</p>
                                 </div>
-                            </section>
-                        </div>
-                    </div>
-                    <div class="options">
-                        <div class="options__container">
+                            </article>
+                        </section>
+                    </section>
+                    <section class="options">
+                        <article class="options__container">
                             <p class="options__title">Сетка:</p>
-                        </div>
-                        <div class="options__container">
+                        </article>
+                        <article class="options__container">
                             <input type="radio" name="" id="">
                             <label class="options__text">Адаптивная</label>
-                        </div>
-                        <div class="options__container">
+                        </article>
+                        <article class="options__container">
                             <input type="radio" name="" id="">
                             <label class="options__text">Фиксированая</label>
-                        </div>
-                        <div class="options__container">
+                        </article>
+                        <article class="options__container">
                             <input type="radio" name="" id="">
                             <label class="options__text">Резиновая</label>
-                        </div>
-                    </div>
-                    <div class="options">
-                        <div class="options__container">
+                        </article>
+                    </section>
+                    <section class="options">
+                        <article class="options__container">
                             <p class="options__title">Особенности:</p>
-                        </div>
-                        <div class="options__container">
+                        </article>
+                        <article class="options__container">
                             <input type="checkbox" name="" id="">
                             <label class="options__text">Слайдер</label>
-                        </div>
-                        <div class="options__container">
+                        </article>
+                        <article class="options__container">
                             <input type="checkbox" name="" id="">
                             <label class="options__text">Блок премуществ</label>
-                        </div>
-                        <div class="options__container">
+                        </article>
+                        <article class="options__container">
                             <input type="checkbox" name="" id="">
                             <label class="options__text">Новости</label>
-                        </div>
-                        <div class="options__container">
+                        </article>
+                        <article class="options__container">
                             <input type="checkbox" name="" id="">
                             <label class="options__text">Галерея</label>
-                        </div>
-                        <div class="options__container">
+                        </article>
+                        <article class="options__container">
                             <input type="checkbox" name="" id="">
                             <label class="options__text">Корзина</label>
-                        </div>
-                    </div>
-                    <div>
-                        <button class="form__button" type="submit">Показать</button>
-                    </div>
+                        </article>
+                    </section>
+                    <button class="form__button" type="submit">Показать</button>   
                 </form>
-            </div>
-            <div class="content__mid">
-                <div>
-                    <section>
-                        <p>Сортировать:</p>
+            </section>
+            <section class="content__mid">
+                <p>Сортировать:</p>
+                <section class="card">
+                    <section class="card__top">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
                     </section>
-                </div>
-                <div class="card">
-                    <div class="card__top">
+                    <section class="card__body">
+                        <section class="card__footer">
+                            <p class="card__title">Sedona</p>
+                            <p class="card__text">Информационный сайт для туристов</p>
+                            <button class="card__btn" href="#">1000 $</button> 
+                        </section>
+                    </section>
+                </section>
+                <section class="card">
+                    <section class="card__top1">
                         <div class="circle"></div>
                         <div class="circle"></div>
                         <div class="circle"></div>
-                    </div>
-                    <div class="card__body">
-                        <div class="card__footer">
-                            <section class="card__titleContainer">
-                                <p class="card__title">Sedona</p>
-                            </section>
-                            <section class="card__textContainer">
-                                <p class="card__text">Информационный сайт для туристов</p>
-                            </section>
-                            <div class="card__linkContainer">
-                                <a class="card__link" href="#">1000 $</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__top1">
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                    </div>
+                    </section>
                     <div class="card__body1"></div>
-                </div>
-                <div class="card">
-                    <div class="card__top1">
+                </section>
+                <section class="card">
+                    <section class="card__top1">
                         <div class="circle"></div>
                         <div class="circle"></div>
                         <div class="circle"></div>
-                    </div>
-                    <div class="card__body2"></div>
-                </div>
-            </div>
-            <div class="content__right">
-                <div>
-                    <section class="content__filter">
-                        <p class="content__filterText1">ПО ЦЕНЕ</p>
-                        <p class="content__filterText2">ПО ТИПУ</p>
-                        <p class="content__filterText2">ПО НАЗВАНИЮ</p>
-                        <img src="asset/icon-down-dir.png" alt="DOWN">
-                        <img src="asset/icon-up-dir.png" alt="UP">
                     </section>
-                </div>
-                <div class="card">
-                    <div class="card__top1">
+                    <div class="card__body2"></div>
+                </section>
+            </section>
+            <section class="content__right">
+                <section class="content__filter">
+                    <p class="content__filterText1">ПО ЦЕНЕ</p>
+                    <p class="content__filterText2">ПО ТИПУ</p>
+                    <p class="content__filterText2">ПО НАЗВАНИЮ</p>
+                    <img src="asset/icon-down-dir.png" alt="DOWN">
+                    <img src="asset/icon-up-dir.png" alt="UP">
+                </section>
+                <section class="card">
+                    <section class="card__top1">
                         <div class="circle"></div>
                         <div class="circle"></div>
                         <div class="circle"></div>
-                    </div>
+                    </section>
                     <div class="card__body3"></div>
-                </div>
-                <div class="card">
-                    <div class="card__top1">
+                </section>
+                <section class="card">
+                    <section class="card__top1">
                         <div class="circle"></div>
                         <div class="circle"></div>
                         <div class="circle"></div>
-                    </div>
+                    </section>
                     <div class="card__body4"></div>
-                </div>
-                <div class="card">
-                    <div class="card__top1">
+                </section>
+                <section class="card">
+                    <section class="card__top1">
                         <div class="circle"></div>
                         <div class="circle"></div>
                         <div class="circle"></div>
-                    </div>
+                    </section>
                     <div class="card__body5"></div>
-                </div>
-            </div>
-        </div>
-        <div class="pagination">
+                </section>
+            </section>
+        </section>
+        <section class="pagination">
             <div class="pagination__pageActive"><p>1</p></div>
             <div class="pagination__page"><p>2</p></div>
             <div class="pagination__page"><p>3</p></div>
             <div class="pagination__next">Следующая</div>
-        </div>
-    </div>
-    <div class="map">       
+        </section>
+    </section>
+    <section class="map"> 
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2147.074443862812!2d32.26311028469535!3d48.507188595566156!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d042af86230269%3A0x6570a067aea03ffe!2zQnJvYWR3YXkgU3RyZWV0LCDQnNCQ0JPQkNCX0JjQnQ!5e0!3m2!1sru!2sua!4v1688221093443!5m2!1sru!2sua" width="1440" height="416" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <section class="map__address">
             <p class="map__title">Nerds Design Studio</p>
-            <section class="map__textWrapper">
+            <article class="map__textWrapper">
                 <p>49104,Dnepr, Petrovich., str. 55</p>
                 <p>tel: +10 855 432 66 33</p>
-            </section>
+            </article>
             <button class="map__button">Напишите нам</button>
         </section>
-    </div>
+    </section>
     <footer class="footer">           
         <ul class="socialLinks">
             <li class="socialLinks__list"><a class="socialLinks__link" href="#"><img src="asset/playstation.png" alt="logo playstation"></a></li>
             <li class="socialLinks__list"><a class="socialLinks__link" href="#"><img src="asset/facebook.png" alt="logo facebook"></a></li>
             <li class="socialLinks__list"><a class="socialLinks__link" href="#"><img src="asset/instagram.png" alt="logo instagram"></a></li>
         </ul>
-        <section class="message">
+        <article class="message">
             <h3 class="message__title">Давайте дружить, это выгодно!</h3>
             <span class="message__text">Скидка 10% для друзей из социальных сетей</span>
-        </section>
+        </article>
     </footer> 
 </body>
 </html>

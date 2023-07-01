@@ -48,7 +48,7 @@ body {
     line-height: 30px;
 }
 
-.basket__wrapper {
+.basket {
     display: inline-flex;
     align-items: center;
 }
@@ -92,17 +92,9 @@ body {
     justify-content: center;
 }
 
-.slogan__titleWrapper{ 
-    width: 540px;
-    flex-shrink: 0;
-}
-
-.slogan__messageWrapper {   
-    width: 400px;
-    flex-shrink: 0;
-}
 
 .slogan__message {
+    width: 400px;
     color: #283136;
     font-size: 16px;
     font-style: normal;
@@ -111,9 +103,9 @@ body {
 }
 
 .slogan__title {
+    width: 540px;
     color: #000;
     font-size: 55px;
-    font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     line-height: 55px;
@@ -185,6 +177,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
+    width: 260px;;
 }
 
 .order__window section {
@@ -327,17 +320,13 @@ body {
 .customers {
     margin-top: 30px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-.customers div {
-    padding: 20px;
-    border-right: 1px solid grey;
-    flex-grow: 1;
-}
-
-.customers__wrapper {
-    border-style: hidden;
+.separator {
+    width: 2px;
+    height: 100px;
+    background: #EEE;
 }
 
 .map {
