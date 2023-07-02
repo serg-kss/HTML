@@ -33,18 +33,22 @@
                         <a class="slogan__link" href="">УЗНАТЬ БОЛЬШЕ</a> 
                     </article>               
                 </section>
-                <section class="slider">
-                    <article class="slider__pictures">
-                        <img class="slider__img" src="asset/slide1.png" alt="slider picture">
-                        <!--<img class="slider__img" src="" alt="">-->
-                        <!--<img class="slider__img" src="" alt="">-->
-                    </article>
-                    <article class="slider__dots">
-                        <input class="slider__dot active" type="radio" name="dot">
-                        <input class="slider__dot active" type="radio" name="dot">
-                        <input class="slider__dot active" type="radio" name="dot">
-                    </article>
-                </section>
+                <div class="slider middle">
+                    <div class="slides">
+                        <input type="radio" name="r" id="r1" checked>
+                        <input type="radio" name="r" id="r2">
+                        <input type="radio" name="r" id="r3">
+
+                        <div class="slide s1"><img src="asset/slide1.png" alt="first"></div>
+                        <div class="slide"><img src="asset/slide1.png" alt="second"></div>
+                        <div class="slide"><img src="asset/slide1.png" alt="third"></div>
+                    </div>
+                    <div class="navigation">
+                        <label class="bar" for="r1"></label>
+                        <label class="bar" for="r2"></label>
+                        <label class="bar" for="r3"></label>
+                    </div>
+                </div>
             </section>
         </header>
         <section class="content">
