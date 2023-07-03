@@ -78,27 +78,17 @@
                     </article>
                 </article>
             </section>
-            <hr class="line">
             <section class="aboutUs">
                 <section class="aboutUs__left">
                     <section class="aboutUs__text">
                         <p class="aboutUs__Title">Мы - маленькая, но гордая дизайн-студия из Днепра.</p>
                         <p class="aboutUs__text1">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем, как роботы.</p>
                         <p class="aboutUs__subTitle">Выполняем заказы на разработку:</p>
-                        <section class="table">
-                            <article class="table__cont">
-                                <div class="redLine"></div>
-                                <p class="table__points">Вэб-сайтов любой сложности</p>
-                            </article>
-                            <article class="table__cont">
-                                <div class="redLine"></div>
-                                <p class="table__points">Мобильных приложений для IOS and Android</p>
-                            </article>
-                            <article class="table__cont">
-                                <div class="redLine"></div>
-                                <p class="table__points">Слайд-шоу и видео для корпоративных презентаций</p>
-                            </article>
-                        </section>
+                        <ul> 
+                            <li class="table__points">Вэб-сайтов любой сложности</li>
+                            <li class="table__points">Мобильных приложений для IOS and Android</li>
+                            <li class="table__points">Слайд-шоу и видео для корпоративных презентаций</li>
+                        </ul>
                     </section>
                 </section>
                 <section class="aboutUs__right">
@@ -122,17 +112,12 @@
                     </article>                   
                 </section>
             </section>
-            <hr class="line">
             <section class="customers">
-                <img src="asset/customer-1.png" alt="customer1">
-                <div class="separator"></div>
-                <img src="asset/customer-2.png" alt="customer2">
-                <div class="separator"></div>
-                <img src="asset/customer-3.png" alt="customer3">
-                <div class="separator"></div>
-                <img src="asset/customer-4.png" alt="customer4">
+                <img class="customers__img1" src="asset/customer-1.png" alt="customer1">
+                <img class="customers__img2" src="asset/customer-2.png" alt="customer2">
+                <img class="customers__img3" src="asset/customer-3.png" alt="customer3">
+                <img class="customers__img4" src="asset/customer-4.png" alt="customer4">
             </section>
-            <hr class="line">
         </section>
     </section>
     <section class="map"> 
@@ -143,7 +128,7 @@
                 <p>49104,Dnepr, Petrovich., str. 55</p>
                 <p>tel: +10 855 432 66 33</p>
             </article>
-            <button class="map__button">Напишите нам</button>
+            <button class="map__button"><a href="#example1">Наишите нам</a></button>
         </section>
     </section>
     <footer class="footer">           
@@ -153,17 +138,17 @@
             <li class="socialLinks__list"><a class="socialLinks__link" href="#"><img src="asset/instagram.png" alt="logo instagram"></a></li>
         </ul>
         <article class="message">
-            <h3 class="message__title">Давайте дружить, это выгодно!</h3>
-            <span class="message__text">Скидка 10% для друзей из социальных сетей</span>
+            <p class="message__title">Давайте дружить, это выгодно!</p>
+            <p class="message__text">Скидка 10% для друзей из социальных сетей</p>
         </article>
     </footer>
     <!--Modal Window-->
-    <!--<section class="modal">
+    <section class="modal" id="example1">
         <section class="modal__window">
             <form action="" method="post">
                 <article class="modal__container">
                     <h1 class="modal__title">Напишите нам</h1>
-                    <button class="btn__close">X</button>
+                    <button class="btn__close"><a href="#close">X</a></button>
                 </article>
                 <section class="modal__container">
                     <article class="input__container">
@@ -183,6 +168,6 @@
                 </article>
             </form>
         </section>
-    </section>-->
+    </section>
 </body>
 </html>
