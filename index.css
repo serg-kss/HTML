@@ -148,6 +148,9 @@ input[name="r"] {
     cursor: pointer;
     background-color: #FFFFFF;
     transition: all .4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .slides {
@@ -166,12 +169,23 @@ input[name="r"] {
     height: 100%;
 }
 
+.test {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
 #r1:checked ~ .s1 {
     margin-left: 0;
 }
 
 #r2:checked ~ .s1 {
     margin-left: -33%;
+}
+
+#r2:checked ~ .test  {
+    display: none;
 }
 
 #r3:checked ~ .s1 {
@@ -393,24 +407,28 @@ input[name="r"] {
 .customers {
     margin-top: 50px;
     border-bottom: 2px solid #EEE;
-    padding-top: 30px;
-    padding-bottom: 60px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-bottom: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
 }
 
-.customers img::after {
-    content: ' ';
+.customers__container {
+    width: 250px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.customers__container:not(:last-child)::after {
+    content: " ";
     width: 2px;
-    height: 52px;
-    margin-right: 5px;
-    background: #EEE;
-    position: absolute;
-    z-index: 100;
-    left: 0;
-    top: 0;
+    height: 82px;
+    margin-left: 20px;
+    background-color: #EEE;
 }
 
 .map {
@@ -480,7 +498,7 @@ input[name="r"] {
 }
 
 .modal {
-    display:none;
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
