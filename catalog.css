@@ -449,6 +449,26 @@ body {
 .message {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+.message__title {
+    width: 660px;
+    flex-shrink: 0;
+    color: #000;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.message__text {  
+    width: 373px;
+    color: #444;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
 }
 
 .socialLinks {
