@@ -13,7 +13,7 @@
     <section class="page"> 
         <header class="header">
             <section class="headerTop">
-                <a href="index.html"><img class="logo__img" src="asset/logo.png" alt="some logo here"></a>
+                <a class="mainPage" href="index.html"><img class="logo__img" src="asset/logo.png" alt="some logo here"></a>
                 <ul class="nav__menu">
                     <li class="nav__list"><a class="nav__link" href="#">СТУДИЯ</a></li>
                     <li class="nav__list"><a class="nav__link" href="#">КЛИЕНТЫ</a></li>
@@ -21,7 +21,7 @@
                     <li class="nav__list"><a class="nav__link" href="#">КОНТАКТЫ</a></li>
                 </ul>                     
                 <article class="basket">
-                    <img class="basket__icon" src="asset/basket.png" alt="basket picture here">
+                    <img class="basket__icon" src="asset/cart-icon.png" alt="basket picture here">
                     <a class="basket__link" href="#">КОРЗИНА</a>   
                 </article>
             </section>
@@ -29,9 +29,7 @@
                 <section class="slogan">
                     <p class="slogan__title">Долго, дорого, скрупулезно.</p>
                     <p class="slogan__message">Математически выверенный дизайн для вашего сайта и мобильного приложения</p>
-                    <article class="slogan__linkWrapper">
-                        <a class="slogan__link" href="">УЗНАТЬ БОЛЬШЕ</a> 
-                    </article>               
+                    <button class="slogan__linkWrapper"><a class="slogan__link" href="#">УЗНАТЬ БОЛЬШЕ</a></button>            
                 </section>
                 <section class="slider">
                         <article class="slider_container">
@@ -54,25 +52,25 @@
                     <img src="asset/illustration-1.png" alt="notebook">
                     <p class="order__windowTitle">ВЕБ-САЙТЫ</p>
                     <p class="order__windowText">Мир никогда не будет прежним,  после того, как увидит ваш сайт!</p>
-                    <article class="linkWrapperNotebook">
+                    <button class="linkWrapperNotebook">
                         <a class="order__windowLink" href="#">ЗАКАЗАТЬ</a>
-                    </article>
+                    </button>
                 </article>
                 <article class="order__window">
                     <img src="asset/illustration-2.png" alt="mobile">
                     <p class="order__windowTitle">ПРИЛОЖЕНИЯ</p>
                     <p class="order__windowText">Покорите топ-10 приложений в AppStore и Google Play</p>
-                    <article class="linkWrapperMobile">
+                    <button class="linkWrapperMobile">
                         <a class="order__windowLink" href="#">ЗАКАЗАТЬ</a>
-                    </article>
+                    </button>
                 </article>
                 <article class="order__window">
                     <img src="asset/illustration-3.png" alt="dashBord">
                     <p class="order__windowTitle">ПРЕЗЕНТАЦИИ</p>
                     <p class="order__windowText">Вы даже не подозреваете, насколько вы изумительны!</p>
-                    <article class="linkWrapperBord">
+                    <button class="linkWrapperBord">
                         <a class="order__windowLink" href="#">ЗАКАЗАТЬ</a>
-                    </article>
+                    </button>
                 </article>
             </section>
             <section class="aboutUs">
@@ -110,10 +108,18 @@
                 </section>
             </section>
             <section class="customers">
-                <section class="customers__container"><img class="customers__img1" src="asset/customer-1.png" alt="customer1"></section>
-                <section class="customers__container"><img class="customers__img2" src="asset/customer-2.png" alt="customer2"></section>
-                <section class="customers__container"><img class="customers__img3" src="asset/customer-3.png" alt="customer3"></section>
-                <section class="customers__container"><img class="customers__img4" src="asset/customer-4.png" alt="customer4"></section>
+                <section class="customers__container">
+                    <a class="customers__link" href="#"><img class="customers__img1" src="asset/customer-1.png" alt="customer1"></a>
+                </section>
+                <section class="customers__container">
+                    <a class="customers__link" href="#"><img class="customers__img2" src="asset/customer-2.png" alt="customer2"></a>
+                </section>
+                <section class="customers__container">
+                    <a class="customers__link" href="#"><img class="customers__img3" src="asset/customer-3.png" alt="customer3"></a>
+                </section>
+                <section class="customers__container">
+                    <a class="customers__link" href="#"><img class="customers__img4" src="asset/customer-4.png" alt="customer4"></a>
+                </section>
             </section>
         </section>
     </section>
@@ -122,47 +128,48 @@
         <section class="map__address">
             <p class="map__title">Nerds Design Studio</p>
             <article class="map__textWrapper">
-                <p>49104,Dnepr, Petrovich., str. 55</p>
+                <p>49104,Dnepr, Petrovich., str. 55<br>ул. Б. Конюшенная, д. 19/8</p>
                 <p>tel: +10 855 432 66 33</p>
             </article>
             <button class="map__button"><a href="#example1">Наишите нам</a></button>
         </section>
+        <section class="map__marker">
+            <img src="asset/map-marker 1.png" alt="">
+        </section>
     </section>
     <footer class="footer">           
         <ul class="socialLinks">
-            <li class="socialLinks__list"><a class="socialLinks__link" href="#"><img src="asset/playstation.png" alt="logo playstation"></a></li>
-            <li class="socialLinks__list"><a class="socialLinks__link" href="#"><img src="asset/facebook.png" alt="logo facebook"></a></li>
-            <li class="socialLinks__list"><a class="socialLinks__link" href="#"><img src="asset/instagram.png" alt="logo instagram"></a></li>
+            <li class="socialLinks__list"><a class="socialLinks__link" href="#"><img src="asset/vk-icon.png" alt="logo playstation"></a></li>
+            <li class="socialLinks__list"><a class="socialLinks__link" href="#"><img src="asset/fb-icon.png" alt="logo facebook"></a></li>
+            <li class="socialLinks__list"><a class="socialLinks__link" href="#"><img src="asset/insta-icon.png" alt="logo instagram"></a></li>
         </ul>
         <article class="message">
-            <p class="message__title">Давайте дружить, это выгодно!</p>
-            <p class="message__text">Скидка 10% для друзей из социальных сетей</p>
-        </article>
+            <p class="message__text">Давайте дружить, это выгодно! Скидка 10% для друзей из социальных сетей</p>  
+        </article>    
     </footer>
     <!--Modal Window-->
     <section class="modal" id="example1">
         <section class="modal__window">
             <form action="" method="post">
                 <article class="modal__container">
-                    <h1 class="modal__title">Напишите нам</h1>
+                    <p class="modal__title">Напишите нам</p>
                     <button class="btn__close"><a href="#close">X</a></button>
                 </article>
                 <section class="modal__container">
                     <article class="input__container">
-                        <label for="name">Ваше имя:</label>
-                        <input type="text" name="name" id="">
+                        <label class="modal__label" for="name">Ваше имя:</label>
+                        <input class="fields" type="text" name="name" placeholder="  Имя Фамилия">
                     </article>
                     <article class="input__container">
-                        <label for="email">Ваш email:</label>
-                        <input type="text" name="email" id="">
+                        <label class="modal__label" for="email">Ваш email:</label>
+                        <input class="fields" type="text" name="email" placeholder="  some-emal@gmail.com">
                     </article>
                 </section>
-                <article class="modal__container">
-                    <textarea class="modal__texarea" name="" id="" cols="30" rows="10"></textarea>
-                </article>
-                <article class="modal__container">
+                <section class="textArea__container">
+                    <label class="modal__label" for="textArea">Текст письма:</label>
+                    <textarea class="fields area" name="textArea" cols="30" rows="10"></textarea>
                     <button class="btn__submit" type="submit">Отправить</button>
-                </article>
+                </section>
             </form>
         </section>
     </section>
