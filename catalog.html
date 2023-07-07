@@ -205,5 +205,31 @@
             <p class="message__text">Давайте дружить, это выгодно! Скидка 10% для друзей из социальных сетей</p>  
         </article>    
     </footer>
+    <!--Modal Window-->
+    <section class="modal" id="example1">
+        <section class="modal__window">
+            <form class="modal__form" action="" method="post">
+                <section class="modal__container">
+                    <p class="modal__title">Напишите нам</p>
+                    <button class="btn__close"><a href="#close">X</a></button>
+                </section>
+                <section class="modal__container">
+                    <article class="input__container">
+                        <label class="modal__label" for="name">Ваше имя:</label>
+                        <input class="fields" type="text" name="name" placeholder="  Имя Фамилия">
+                    </article>
+                    <article class="input__container">
+                        <label class="modal__label" for="email">Ваш email:</label>
+                        <input class="fields" type="text" name="email" placeholder="  some-emal@gmail.com">
+                    </article>
+                </section>
+                <section class="textArea__container">
+                    <label class="modal__label" for="textArea">Текст письма:</label>
+                    <textarea class="fields area" name="textArea" cols="30" rows="10" placeholder="  В свободной форме"></textarea>
+                    <button class="btn__submit" type="submit">Отправить</button>
+                </section>
+            </form>
+        </section>
+    </section>
 </body>
 </html>
