@@ -150,7 +150,7 @@ body {
     opacity: 1;
 }
 
-.filter__img--active:hover {
+.filter__img--active {
     opacity: 1;
 }
 
@@ -686,7 +686,7 @@ input[name=checkbox]:checked + .option__label--checkbox:hover:after{
 
 .map__address {
     position: absolute;
-    z-index: 100;
+    z-index: 80;
     left: 0;
     top: 0;
     background-color: white;
