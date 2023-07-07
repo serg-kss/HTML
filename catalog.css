@@ -268,9 +268,10 @@ body {
 .options__container {
     display: flex;
     margin-top: 15px;
-    list-style-type: none;
+    border: none;
     align-items: center;
- 
+    margin-left: 0;
+    padding-left: 0;
 }
 
 .options__container input[name=radio]{
@@ -284,7 +285,9 @@ body {
 .options__container__checkbox {
     display: flex;
     margin-top: 15px;
-    list-style-type: none;
+    border: none;
+    margin-left: 0;
+    padding-left: 0;
 }
 
 .options__container__checkbox input[name=checkbox]{
