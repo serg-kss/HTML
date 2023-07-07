@@ -13,7 +13,7 @@
     <section class="page">
         <header class="header">
             <section class="headerTop">
-                <a href="index.html"><img class="logo__img" src="asset/logo.png" alt="some logo here"></a>                 
+                <a class="mainPage" href="index.html"><img class="logo__img" src="asset/logo.png" alt="some logo here"></a>                 
                 <ul class="nav__menu">
                     <li class="nav__list"><a class="nav__link" href="#">СТУДИЯ</a></li>
                     <li class="nav__list"><a class="nav__link" href="#">КЛИЕНТЫ</a></li>
@@ -21,13 +21,11 @@
                     <li class="nav__list"><a class="nav__link" href="#">КОНТАКТЫ</a></li>
                 </ul>                     
                 <article class="basket">
-                    <img class="basket__icon" src="asset/basket.png" alt="basket picture here">
+                    <img class="basket__icon" src="asset/cart-icon.png" alt="basket picture here">
                     <a class="basket__link" href="#">КОРЗИНА</a>
                 </article>
             </section>
-            <article class="headerBottom">
-                    <p class="headerBottom__title">МАГАЗИН ГОТОВЫХ ШАБЛОНОВ</p>
-            </article>           
+            <p class="headerBottom__title">МАГАЗИН ГОТОВЫХ ШАБЛОНОВ</p>     
         </header>
         <section class="content">
             <section class="content__left">
@@ -35,14 +33,9 @@
                 <form action="" method="post">
                     <section class="value">
                         <section class="value__top">
-                            <div class="dot">
-                                <div class="dot__small"></div>
-                            </div>
-                            <div class="line1"></div>
-                            <div class="dot">
-                                <div class="dot__small"></div>
-                            </div>
-                            <div class="line2"></div>
+                            <div class="dot"></div>
+                            <div class="line"></div>
+                            <div class="dot"></div>
                         </section>
                         <section class="value__bottom">
                             <article class="container">
@@ -59,48 +52,44 @@
                             </article>
                         </section>
                     </section>
-                    <section class="options">
-                        <article class="options__container">
+                    <ul class="options">
                             <p class="options__title">Сетка:</p>
-                        </article>
-                        <article class="options__container">
-                            <input type="radio" name="" id="">
-                            <label class="options__text">Адаптивная</label>
-                        </article>
-                        <article class="options__container">
-                            <input type="radio" name="" id="">
-                            <label class="options__text">Фиксированая</label>
-                        </article>
-                        <article class="options__container">
-                            <input type="radio" name="" id="">
-                            <label class="options__text">Резиновая</label>
-                        </article>
-                    </section>
-                    <section class="options">
-                        <article class="options__container">
+                        <li class="options__container">
+                            <input type="radio" name="radio" id="">
+                            <label class="options__label r" for="radio">Адаптивная</label>
+                        </li>
+                        <li class="options__container">
+                            <input type="radio" name="radio" id="">
+                            <label class="options__label r" for="radio">Фиксированая</label>
+                        </li>
+                        <li class="options__container">
+                            <input type="radio" name="radio" id="">
+                            <label class="options__label option__label--radio" for="radio">Резиновая</label>
+                        </li>
+                    </ul>
+                    <ul class="options">
                             <p class="options__title">Особенности:</p>
-                        </article>
-                        <article class="options__container">
-                            <input type="checkbox" name="" id="">
-                            <label class="options__text">Слайдер</label>
-                        </article>
-                        <article class="options__container">
-                            <input type="checkbox" name="" id="">
-                            <label class="options__text">Блок премуществ</label>
-                        </article>
-                        <article class="options__container">
-                            <input type="checkbox" name="" id="">
-                            <label class="options__text">Новости</label>
-                        </article>
-                        <article class="options__container">
-                            <input type="checkbox" name="" id="">
-                            <label class="options__text">Галерея</label>
-                        </article>
-                        <article class="options__container">
-                            <input type="checkbox" name="" id="">
-                            <label class="options__text">Корзина</label>
-                        </article>
-                    </section>
+                        <li class="options__container__checkbox">
+                            <input type="checkbox" name="checkbox" id="">
+                            <label class="options__label c" for="checkbox">Слайдер</label>
+                        </li>
+                        <li class="options__container__checkbox">
+                            <input type="checkbox" name="checkbox" id="">
+                            <label class="options__label c" for="checkbox">Блок премуществ</label>
+                        </li>
+                        <li class="options__container__checkbox">
+                            <input type="checkbox" name="checkbox" id="">
+                            <label class="options__label c" for="checkbox">Новости</label>
+                        </li>
+                        <li class="options__container__checkbox">
+                            <input type="checkbox" name="checkbox" id="">
+                            <label class="options__label c" for="checkbox">Галерея</label>
+                        </li>
+                        <li class="options__container__checkbox">
+                            <input type="checkbox" name="checkbox" id="">
+                            <label class="options__label c" for="checkbox">Корзина</label>
+                        </li>
+                    </ul>
                     <button class="form__button" type="submit">Показать</button>   
                 </form>
             </section>

@@ -159,6 +159,7 @@ body {
     height: 431px;
     display: flex;
     overflow: hidden;
+    margin-right: 50px;
 }
 
 .slider_container {
@@ -208,7 +209,7 @@ input:checked + .label::after{
 }
 
 .slide img {
-    width: 80%;
+    width: 100%;
 }
 
 input:checked + .label + .slide {
@@ -517,7 +518,7 @@ input:checked + .label + .slide {
 
 .map__address {
     position: absolute;
-    z-index: 100;
+    z-index: 90;
     left: 0;
     top: 0;
     background-color: white;
@@ -585,12 +586,13 @@ input:checked + .label + .slide {
 .modal {
     display: none;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 100px;
+    left: 200px;
+    width: max-content;
+    height: fit-content;
     align-items: center;
     justify-content: center;
+    z-index: 95;
 }
 
 .modal:target {
@@ -599,13 +601,22 @@ input:checked + .label + .slide {
 
 .modal__window {
     position: relative;
-    z-index: 2;
-    width: 550px;
+    z-index: 99;
+    width: 960px;
+    height: 590px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, .4);
     background-color: #FFF;
-    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__form {
+    margin: 50px;
     display: flex;
     flex-direction: column;
+    width: 760px;
+    margin-bottom: 130px;
 }
 
 .modal__title {
@@ -624,6 +635,8 @@ input:checked + .label + .slide {
 .input__container {
     display: flex;
     flex-direction: column;
+    width: 360px;
+    height: 77px;
 }
 
 .btn__close {
@@ -650,6 +663,7 @@ input:checked + .label + .slide {
 }
 
 .btn__submit {
+    margin-top: 30px;
     width: 219px;
     height: 50px;
     border-radius: 3px;
@@ -657,7 +671,6 @@ input:checked + .label + .slide {
     font-size: 16px;
     color: #EEE;
     border: none;
-    margin-top: 50px;
 }
 
 .btn__submit:hover {
@@ -669,12 +682,13 @@ input:checked + .label + .slide {
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 18px;
     padding-bottom: 10px;
+    width: 120px;
+    height: 18px;
 }
 
 .fields {
-    width: 250px;
+    width: 360px;
     height: 50px;
     border-radius: 3px;
     border: 2px solid #D7DCDE;
@@ -693,6 +707,8 @@ input:checked + .label + .slide {
 
 .textArea__container {
     margin-top: 50px;
+    width: 760px;
+    height: 145px;
 }
 
 .area {
