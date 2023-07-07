@@ -39,55 +39,51 @@
                         </section>
                         <section class="value__bottom">
                             <article class="container">
-                                <p class="value__text">от</p>
-                                <div class="value__amountWrapper">
-                                    <p class="value__amount">0</p>
-                                </div>
+                                <label for="number1" class="value__label">от</label>
+                                <input type="number" name="number" id="number1" class="value__amount" value="0">
                             </article>
                             <article class="container">
-                                <p class="value__text">до</p>
-                                <div class="value__amountWrapper">
-                                    <p class="value__amount">15 000</p>
-                                </div>
+                                <label for="number2" class="value__label">до</label>
+                                <input type="number" name="number" id="number2" class="value__amount" value="15000">
                             </article>
                         </section>
                     </section>
                     <ul class="options">
                             <p class="options__title">Сетка:</p>
                         <li class="options__container">
-                            <input type="radio" name="radio" id="">
-                            <label class="options__label r" for="radio">Адаптивная</label>
+                            <input type="radio" name="radio" id="radio1">
+                            <label class="options__label option__label--radio" for="radio1">Адаптивная</label>
                         </li>
                         <li class="options__container">
-                            <input type="radio" name="radio" id="">
-                            <label class="options__label r" for="radio">Фиксированая</label>
+                            <input type="radio" name="radio" id="radio2">
+                            <label class="options__label option__label--radio" for="radio2">Фиксированая</label>
                         </li>
                         <li class="options__container">
-                            <input type="radio" name="radio" id="">
-                            <label class="options__label option__label--radio" for="radio">Резиновая</label>
+                            <input type="radio" name="radio" id="radio3">
+                            <label class="options__label option__label--radio" for="radio3">Резиновая</label>
                         </li>
                     </ul>
                     <ul class="options">
                             <p class="options__title">Особенности:</p>
                         <li class="options__container__checkbox">
-                            <input type="checkbox" name="checkbox" id="">
-                            <label class="options__label c" for="checkbox">Слайдер</label>
+                            <input type="checkbox" name="checkbox" id="checkbox1">
+                            <label class="options__label option__label--checkbox" for="checkbox1">Слайдер</label>
                         </li>
                         <li class="options__container__checkbox">
-                            <input type="checkbox" name="checkbox" id="">
-                            <label class="options__label c" for="checkbox">Блок премуществ</label>
+                            <input type="checkbox" name="checkbox" id="checkbox2">
+                            <label class="options__label option__label--checkbox" for="checkbox2">Блок премуществ</label>
                         </li>
                         <li class="options__container__checkbox">
-                            <input type="checkbox" name="checkbox" id="">
-                            <label class="options__label c" for="checkbox">Новости</label>
+                            <input type="checkbox" name="checkbox" id="checkbox3">
+                            <label class="options__label option__label--checkbox" for="checkbox3">Новости</label>
                         </li>
                         <li class="options__container__checkbox">
-                            <input type="checkbox" name="checkbox" id="">
-                            <label class="options__label c" for="checkbox">Галерея</label>
+                            <input type="checkbox" name="checkbox" id="checkbox4">
+                            <label class="options__label option__label--checkbox" for="checkbox4">Галерея</label>
                         </li>
                         <li class="options__container__checkbox">
-                            <input type="checkbox" name="checkbox" id="">
-                            <label class="options__label c" for="checkbox">Корзина</label>
+                            <input type="checkbox" name="checkbox" id="checkbox5">
+                            <label class="options__label option__label--checkbox" for="checkbox5">Корзина</label>
                         </li>
                     </ul>
                     <button class="form__button" type="submit">Показать</button>   
@@ -97,8 +93,6 @@
                 <p>Сортировать:</p>
                 <section class="card">
                     <section class="card__top">
-                        <div class="circle"></div>
-                        <div class="circle"></div>
                         <div class="circle"></div>
                     </section>
                     <section class="card__body">
@@ -110,62 +104,82 @@
                     </section>
                 </section>
                 <section class="card">
-                    <section class="card__top1">
-                        <div class="circle"></div>
-                        <div class="circle"></div>
+                    <section class="card__top">
                         <div class="circle"></div>
                     </section>
-                    <div class="card__body1"></div>
+                    <div class="card__body1">
+                        <section class="card__footer">
+                            <p class="card__title">Barbershop</p>
+                            <p class="card__text">Сайт салона красоты. Для мужчин, да.</p>
+                            <button class="card__btn" href="#">1000 $</button> 
+                        </section>   
+                    </div>
                 </section>
                 <section class="card">
-                    <section class="card__top1">
-                        <div class="circle"></div>
-                        <div class="circle"></div>
+                    <section class="card__top">
                         <div class="circle"></div>
                     </section>
-                    <div class="card__body2"></div>
+                    <div class="card__body2">
+                        <section class="card__footer">
+                            <p class="card__title">A Plus</p>
+                            <p class="card__text">Лендинг курсов повышения квалификации</p>
+                            <button class="card__btn" href="#">1000 $</button> 
+                        </section> 
+                    </div>
                 </section>
             </section>
             <section class="content__right">
                 <section class="content__filter">
-                    <p class="content__filterText1">ПО ЦЕНЕ</p>
-                    <p class="content__filterText2">ПО ТИПУ</p>
-                    <p class="content__filterText2">ПО НАЗВАНИЮ</p>
-                    <img src="asset/icon-down-dir.png" alt="DOWN">
-                    <img src="asset/icon-up-dir.png" alt="UP">
+                    <p class="content__filterText content__filterText--active">ПО ЦЕНЕ</p>
+                    <p class="content__filterText">ПО ТИПУ</p>
+                    <p class="content__filterText">ПО НАЗВАНИЮ</p>
+                    <img class="filter__img filter__img--active" src="asset/icon-down-dir.png" alt="DOWN">
+                    <img class="filter__img" src="asset/icon-up-dir-2.png" alt="UP">
                 </section>
                 <section class="card">
-                    <section class="card__top1">
-                        <div class="circle"></div>
-                        <div class="circle"></div>
+                    <section class="card__top">
                         <div class="circle"></div>
                     </section>
-                    <div class="card__body3"></div>
+                    <div class="card__body3">
+                        <section class="card__footer">
+                            <p class="card__title">Pink app</p>
+                            <p class="card__text">Продуктовый лендингприложения для iOS и Android</p>
+                            <button class="card__btn" href="#">1000 $</button> 
+                        </section> 
+                    </div>
                 </section>
                 <section class="card">
-                    <section class="card__top1">
-                        <div class="circle"></div>
-                        <div class="circle"></div>
+                    <section class="card__top">
                         <div class="circle"></div>
                     </section>
-                    <div class="card__body4"></div>
+                    <div class="card__body4">
+                        <section class="card__footer">
+                            <p class="card__title">MISHKA</p>
+                            <p class="card__text">Интернет-магазин вязаных игрушек</p>
+                            <button class="card__btn" href="#">1000 $</button> 
+                        </section> 
+                    </div>
                 </section>
                 <section class="card">
-                    <section class="card__top1">
-                        <div class="circle"></div>
-                        <div class="circle"></div>
+                    <section class="card__top">
                         <div class="circle"></div>
                     </section>
-                    <div class="card__body5"></div>
+                    <div class="card__body5">
+                        <section class="card__footer">
+                            <p class="card__title">КВАС</p>
+                            <p class="card__text">Промо-сайт производителя крафтового кваса</p>
+                            <button class="card__btn" href="#">1000 $</button> 
+                        </section> 
+                    </div>
                 </section>
             </section>
         </section>
-        <section class="pagination">
-            <div class="pagination__pageActive"><p>1</p></div>
-            <div class="pagination__page"><p>2</p></div>
-            <div class="pagination__page"><p>3</p></div>
-            <div class="pagination__next">Следующая</div>
-        </section>
+        <ul class="pagination">
+            <li class="pagination__page pagination__page--active"><a href="#">1</a></li>
+            <li class="pagination__page"><a href="#">2</a></li>
+            <li class="pagination__page"><a href="#">3</a></li>
+            <li class="pagination__page pagination__page--next"><a href="#">Следующая</a></li>
+        </ul>
     </section>
     <section class="map"> 
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2147.074443862812!2d32.26311028469535!3d48.507188595566156!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d042af86230269%3A0x6570a067aea03ffe!2zQnJvYWR3YXkgU3RyZWV0LCDQnNCQ0JPQkNCX0JjQnQ!5e0!3m2!1sru!2sua!4v1688221093443!5m2!1sru!2sua" width="1440" height="416" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

@@ -134,30 +134,43 @@ body {
     justify-content: center;
 }
 
-.content__filter img {
+.filter__img {
     width: 11px;
     height: 10px;
     flex-shrink: 0;
     margin-right: 5px;
+    opacity: .3;
 }
 
-.content__filterText1 {
+.filter__img:hover {
+    opacity: .6;
+}
+
+.filter__img--active {
+    opacity: 1;
+}
+
+.filter__img--active:hover {
+    opacity: 1;
+}
+
+.content__filterText{
     color: #000;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 18px;
     margin-right: 15px;
-}
-
-.content__filterText2 {
-    color: #000;
-    font-size: 14px;
     opacity: 0.30000001192092896;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
-    margin-right: 15px;
+    cursor: pointer;
+}
+
+.content__filterText--active {
+    opacity: 1;
+}
+
+.content__filterText:not(:first-child):hover {
+    opacity: .6;
 }
 
 .value {
@@ -225,7 +238,7 @@ body {
     margin-top: 15px;
 }
 
-.value__text {
+.value__label {
     color: #283136;
     font-size: 16px;
     font-style: normal;
@@ -235,30 +248,21 @@ body {
     margin-right: 10px;
 }
 
-.value__amountWrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.value__amount {
     width: 80px;
     height: 38px;
     flex-shrink: 0;
     border-radius: 3px;
     background: #EEE;
-}
-
-.value__amount {
-    color: #283136;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 22px;
-    text-transform: uppercase;
+    border: none;
 }
 
 .options {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
+    margin-left: 0;
+    padding-left: 0;
 }
 
 .options__container {
@@ -285,6 +289,9 @@ body {
 
 .options__container__checkbox input[name=checkbox]{
     visibility: hidden;
+    position: fixed;
+    left: 200px;
+    bottom: 0;
 }
 
 .options__label {
@@ -296,17 +303,21 @@ body {
     align-items: center;
 }
 
-.r::before {
+.option__label--radio::before {
     content: " ";
     width: 25px;
     height: 25px;
     opacity: 0.4000000059604645;
     border-radius: 50%;
     border: 2px solid #4D4D4D;
-    margin-right: 10px;
+    margin-right: 10px;   
 }
 
-.r::after {
+.option__label--radio:hover::before {
+    opacity: 1;
+}
+
+input[name=radio]:checked + .option__label--radio::after {
     content: " ";
     width: 15px;
     height: 15px;
@@ -317,7 +328,34 @@ body {
     margin-left: 7px;
 }
 
-.r:hover::after, .r:hover::before {
+input[name=radio]:checked + .option__label--radio:hover::after{
+    opacity: 1;
+}
+
+.option__label--checkbox::before {
+    content: " ";
+    width: 23px;
+    height: 23px;
+    background-image: url("asset/checkbox-off-2.png");
+    opacity: 0.4000000059604645;
+    margin-right: 10px; 
+}
+
+.option__label--checkbox:hover:before {
+    opacity: 1;
+}
+
+input[name=checkbox]:checked + .option__label--checkbox::after {
+    content: " ";
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    opacity: 0.4000000059604645;
+    margin-right: 10px; 
+    background-image: url("asset/checkbox-on.png");
+}
+
+input[name=checkbox]:checked + .option__label--checkbox:hover:after{
     opacity: 1;
 }
 
@@ -340,23 +378,27 @@ body {
     line-height: 18px;
     width: 260px;
     height: 50px;
-    background: #EEE;
+    background: #EEEEEE;
+    border-radius: 3px;
     border: none;
+}
+
+.form__button:hover {
+    background: #DFDFDF;
+}
+
+.form__button:active {
+    background: #D5D5D5;
+    box-shadow: 0px 3px 0px 0px rgba(0, 1, 1, 0.10) inset;
+    color: grey;
 }
 
 .card {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
-}
-
-.card__top {
-    display: inline-flex;
-    align-items: center;
-    width: 360px;
-    height: 40px;
-    background-color: #4D4D4D;
-    
+    width: 358px;
+    overflow: hidden;
 }
 
 .circle {
@@ -364,8 +406,27 @@ body {
     height: 14px;
     background-color: white;
     border-radius: 50%;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 35px;
+}
+
+.circle::before {
+    content: " ";
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 20px;
+    position: absolute;
+}
+
+.circle::after {
+    content: " ";
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 40px;
+    position: absolute;
 }
 
 .card__body {
@@ -386,6 +447,15 @@ body {
     height: 231px;
     flex-shrink: 0;
     background-color: #EEEEEE;
+    visibility: hidden;
+}
+
+.card:hover .card__footer {
+    visibility: visible;
+}
+
+.card:hover .card__top {
+    background-color: #4D4D4D;
 }
 
 .card__title {
@@ -419,7 +489,16 @@ body {
     border: none;
 }
 
-.card__top1 {
+.card__btn:hover {
+    background: #E74246;
+}
+
+.card__btn:active {
+    background: #D7373B;
+    box-shadow: 0px 3px 0px 0px rgba(0, 1, 1, 0.10) inset;
+}
+
+.card__top {
     background-color: #EEEEEE;
     display: inline-flex;
     align-items: center;
@@ -428,6 +507,8 @@ body {
 }
 
 .card__body1 {
+    display: flex;
+    align-items: end;
     width: 358px;
     height: 578px;
     flex-shrink: 0;
@@ -435,6 +516,8 @@ body {
 }
 
 .card__body2 {
+    display: flex;
+    align-items: end;
     width: 358px;
     height: 578px;
     flex-shrink: 0;
@@ -442,6 +525,8 @@ body {
 }
 
 .card__body3 {
+    display: flex;
+    align-items: end;
     width: 358px;
     height: 578px;
     flex-shrink: 0;
@@ -449,6 +534,8 @@ body {
 }
 
 .card__body4 {
+    display: flex;
+    align-items: end;
     width: 358px;
     height: 578px;
     flex-shrink: 0;
@@ -456,6 +543,8 @@ body {
 }
 
 .card__body5 {
+    display: flex;
+    align-items: end;
     width: 358px;
     height: 578px;
     flex-shrink: 0;
@@ -479,9 +568,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    list-style-type: none;
 }
 
-.pagination__pageActive {
+.pagination__page a {
+    text-decoration: none;
+    color: black;
+}
+
+.pagination__page a:active {
+    color: grey;
+}
+
+.pagination__page--active {
     width: 50px;
     height: 50px;
     margin-right: 15px;
@@ -495,7 +594,7 @@ body {
 }
     
 
-.pagination__next {
+.pagination__page--next {
     width: 260px;
     height: 50px;
     flex-shrink: 0;
@@ -504,6 +603,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.pagination__page:not(:first-child):hover {
+    background: #DFDFDF;
+}
+
+.pagination__page:not(:first-child):active {
+    background: #D5D5D5;
+    box-shadow: 0px 3px 0px 0px rgba(0, 1, 1, 0.10) inset;
 }
 
 .footer {
