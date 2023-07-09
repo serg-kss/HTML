@@ -1,5 +1,18 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto/Roboto-Regular.ttf") format("ttf");
+    font-display: swap;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto/Roboto-Bold.ttf") format("ttf");
+    font-display: swap;
+    font-weight: 700;
+}
+
 body {
-    font-family: 'Roboto', sans-serif; 
     margin: 0;
     padding: 0;
 }
@@ -110,6 +123,22 @@ body {
     margin-left: 140px;
     margin-right: 140px;
     display: flex;
+    flex-direction: column;
+}
+
+.filter__menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.content__data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content__cards {
+    display: flex;
     justify-content: space-between;
 }
 
@@ -121,6 +150,7 @@ body {
 .content__mid {
     display: flex;
     flex-direction: column;
+    margin-right: 45px;
 }
 
 .content__right {
@@ -131,7 +161,8 @@ body {
 .content__filter {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    width: 360px;
 }
 
 .filter__img {
@@ -559,6 +590,7 @@ input[name=checkbox]:checked + .option__label--checkbox:hover:after{
     align-items: center;
     justify-content: center;
     margin-top: 50px;
+    margin-left: 50px;
 }
 
 .pagination__page {
@@ -637,6 +669,7 @@ input[name=checkbox]:checked + .option__label--checkbox:hover:after{
     font-style: normal;
     font-weight: 700;
     line-height: 36px;
+    font-family: 'Roboto';
 }
 
 .message__text {  
@@ -645,6 +678,7 @@ input[name=checkbox]:checked + .option__label--checkbox:hover:after{
     font-style: normal;
     font-weight: 400;
     line-height: 22px;
+    font-family: 'Roboto';
 }
 
 .socialLinks {
@@ -718,6 +752,7 @@ input[name=checkbox]:checked + .option__label--checkbox:hover:after{
     font-weight: 700;
     line-height: 30px;
     text-transform: uppercase;
+    font-family: 'Roboto';
 }
 
 .map__textWrapper {
@@ -793,8 +828,9 @@ input[name=checkbox]:checked + .option__label--checkbox:hover:after{
 .modal__title {
     color: #000;
     font-size: 22px;
-    font-weight: 900;
+    font-weight: 700;
     line-height: 30px;
+    font-family: 'Roboto';
 }
 
 .modal__container {
@@ -849,6 +885,7 @@ input[name=checkbox]:checked + .option__label--checkbox:hover:after{
 }
 
 .modal__label{
+    font-family: 'Roboto';
     color: #000;
     font-size: 16px;
     font-style: normal;

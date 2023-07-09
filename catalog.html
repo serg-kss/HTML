@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preload" href="../fonts/Roboto/Roboto-Bold.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="../fonts/Roboto/Roboto-Regular.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="stylesheet" href="catalog.css">
     <title>Catalog</title>
 </head>
@@ -28,107 +27,9 @@
             <p class="headerBottom__title">МАГАЗИН ГОТОВЫХ ШАБЛОНОВ</p>     
         </header>
         <section class="content">
-            <section class="content__left">
+            <section class="filter__menu">
                 <p>Стоимость:</p>
-                <form action="" method="post">
-                    <section class="value">
-                        <section class="value__top">
-                            <div class="dot"></div>
-                            <div class="line"></div>
-                            <div class="dot"></div>
-                        </section>
-                        <section class="value__bottom">
-                            <article class="container">
-                                <label for="number1" class="value__label">от</label>
-                                <input type="number" name="number" id="number1" class="value__amount" value="0">
-                            </article>
-                            <article class="container">
-                                <label for="number2" class="value__label">до</label>
-                                <input type="number" name="number" id="number2" class="value__amount" value="15000">
-                            </article>
-                        </section>
-                    </section>
-                    <section class="options">
-                            <p class="options__title">Сетка:</p>
-                        <fieldset class="options__container">
-                            <input type="radio" name="radio" id="radio1">
-                            <label class="options__label option__label--radio" for="radio1">Адаптивная</label>
-                        </fieldset>
-                        <fieldset class="options__container">
-                            <input type="radio" name="radio" id="radio2">
-                            <label class="options__label option__label--radio" for="radio2">Фиксированая</label>
-                        </fieldset>
-                        <fieldset class="options__container">
-                            <input type="radio" name="radio" id="radio3">
-                            <label class="options__label option__label--radio" for="radio3">Резиновая</label>
-                        </fieldset>
-                    </section>
-                    <section class="options">
-                            <p class="options__title">Особенности:</p>
-                        <fieldset class="options__container__checkbox">
-                            <input type="checkbox" name="checkbox" id="checkbox1">
-                            <label class="options__label option__label--checkbox" for="checkbox1">Слайдер</label>
-                        </fieldset>
-                        <fieldset class="options__container__checkbox">
-                            <input type="checkbox" name="checkbox" id="checkbox2">
-                            <label class="options__label option__label--checkbox" for="checkbox2">Блок премуществ</label>
-                        </fieldset>
-                        <fieldset class="options__container__checkbox">
-                            <input type="checkbox" name="checkbox" id="checkbox3">
-                            <label class="options__label option__label--checkbox" for="checkbox3">Новости</label>
-                        </fieldset>
-                        <fieldset class="options__container__checkbox">
-                            <input type="checkbox" name="checkbox" id="checkbox4">
-                            <label class="options__label option__label--checkbox" for="checkbox4">Галерея</label>
-                        </fieldset>
-                        <fieldset class="options__container__checkbox">
-                            <input type="checkbox" name="checkbox" id="checkbox5">
-                            <label class="options__label option__label--checkbox" for="checkbox5">Корзина</label>
-                        </fieldset>
-                    </section>
-                    <button class="form__button" type="submit">Показать</button>   
-                </form>
-            </section>
-            <section class="content__mid">
                 <p>Сортировать:</p>
-                <section class="card">
-                    <section class="card__top">
-                        <div class="circle"></div>
-                    </section>
-                    <div class="card__body">
-                        <section class="card__footer">
-                            <p class="card__title">Sedona</p>
-                            <p class="card__text">Информационный сайт для туристов</p>
-                            <button class="card__btn" href="#">1000 $</button> 
-                        </section>
-                    </div>
-                </section>
-                <section class="card">
-                    <section class="card__top">
-                        <div class="circle"></div>
-                    </section>
-                    <div class="card__body1">
-                        <section class="card__footer">
-                            <p class="card__title">Barbershop</p>
-                            <p class="card__text">Сайт салона красоты. Для мужчин, да.</p>
-                            <button class="card__btn" href="#">1000 $</button> 
-                        </section>   
-                    </ы>
-                </section>
-                <section class="card">
-                    <section class="card__top">
-                        <div class="circle"></div>
-                    </section>
-                    <div class="card__body2">
-                        <section class="card__footer">
-                            <p class="card__title">A Plus</p>
-                            <p class="card__text">Лендинг курсов повышения квалификации</p>
-                            <button class="card__btn" href="#">1000 $</button> 
-                        </section> 
-                    </div>
-                </section>
-            </section>
-            <section class="content__right">
                 <section class="content__filter">
                     <p class="content__filterText content__filterText--active">ПО ЦЕНЕ</p>
                     <p class="content__filterText">ПО ТИПУ</p>
@@ -136,43 +37,147 @@
                     <img class="filter__img filter__img--active" src="asset/icon-down-dir.png" alt="DOWN">
                     <img class="filter__img" src="asset/icon-up-dir-2.png" alt="UP">
                 </section>
-                <section class="card">
-                    <section class="card__top">
-                        <div class="circle"></div>
-                    </section>
-                    <div class="card__body3">
-                        <section class="card__footer">
-                            <p class="card__title">Pink app</p>
-                            <p class="card__text">Продуктовый лендингприложения для iOS и Android</p>
-                            <button class="card__btn" href="#">1000 $</button> 
-                        </section> 
-                    </div>
-                </section>
-                <section class="card">
-                    <section class="card__top">
-                        <div class="circle"></div>
-                    </section>
-                    <div class="card__body4">
-                        <section class="card__footer">
-                            <p class="card__title">MISHKA</p>
-                            <p class="card__text">Интернет-магазин вязаных игрушек</p>
-                            <button class="card__btn" href="#">1000 $</button> 
-                        </section> 
-                    </div>
-                </section>
-                <section class="card">
-                    <section class="card__top">
-                        <div class="circle"></div>
-                    </section>
-                    <div class="card__body5">
-                        <section class="card__footer">
-                            <p class="card__title">КВАС</p>
-                            <p class="card__text">Промо-сайт производителя крафтового кваса</p>
-                            <button class="card__btn" href="#">1000 $</button> 
-                        </section> 
-                    </div>
-                </section>
             </section>
+            <section class="content__data">
+                <section class="content__left">
+                    <form action="" method="post">
+                        <section class="value">
+                            <section class="value__top">
+                                <div class="dot"></div>
+                                <div class="line"></div>
+                                <div class="dot"></div>
+                            </section>
+                            <section class="value__bottom">
+                                <article class="container">
+                                    <label for="number1" class="value__label">от</label>
+                                    <input type="number" name="number" id="number1" class="value__amount" value="0">
+                                </article>
+                                <article class="container">
+                                    <label for="number2" class="value__label">до</label>
+                                    <input type="number" name="number" id="number2" class="value__amount" value="15000">
+                                </article>
+                            </section>
+                        </section>
+                        <section class="options">
+                                <p class="options__title">Сетка:</p>
+                            <fieldset class="options__container">
+                                <input type="radio" name="radio" id="radio1">
+                                <label class="options__label option__label--radio" for="radio1">Адаптивная</label>
+                            </fieldset>
+                            <fieldset class="options__container">
+                                <input type="radio" name="radio" id="radio2">
+                                <label class="options__label option__label--radio" for="radio2">Фиксированая</label>
+                            </fieldset>
+                            <fieldset class="options__container">
+                                <input type="radio" name="radio" id="radio3">
+                                <label class="options__label option__label--radio" for="radio3">Резиновая</label>
+                            </fieldset>
+                        </section>
+                        <section class="options">
+                                <p class="options__title">Особенности:</p>
+                            <fieldset class="options__container__checkbox">
+                                <input type="checkbox" name="checkbox" id="checkbox1">
+                                <label class="options__label option__label--checkbox" for="checkbox1">Слайдер</label>
+                            </fieldset>
+                            <fieldset class="options__container__checkbox">
+                                <input type="checkbox" name="checkbox" id="checkbox2">
+                                <label class="options__label option__label--checkbox" for="checkbox2">Блок премуществ</label>
+                            </fieldset>
+                            <fieldset class="options__container__checkbox">
+                                <input type="checkbox" name="checkbox" id="checkbox3">
+                                <label class="options__label option__label--checkbox" for="checkbox3">Новости</label>
+                            </fieldset>
+                            <fieldset class="options__container__checkbox">
+                                <input type="checkbox" name="checkbox" id="checkbox4">
+                                <label class="options__label option__label--checkbox" for="checkbox4">Галерея</label>
+                            </fieldset>
+                            <fieldset class="options__container__checkbox">
+                                <input type="checkbox" name="checkbox" id="checkbox5">
+                                <label class="options__label option__label--checkbox" for="checkbox5">Корзина</label>
+                            </fieldset>
+                        </section>
+                        <button class="form__button" type="submit">Показать</button>   
+                    </form>
+                </section>
+                <section class="content__cards">
+                    <section class="content__mid">
+                        <section class="card">
+                            <section class="card__top">
+                                <div class="circle"></div>
+                            </section>
+                            <div class="card__body">
+                                <section class="card__footer">
+                                    <p class="card__title">Sedona</p>
+                                    <p class="card__text">Информационный сайт для туристов</p>
+                                    <button class="card__btn" href="#">1000 $</button> 
+                                </section>
+                            </div>
+                        </section>
+                        <section class="card">
+                            <section class="card__top">
+                                <div class="circle"></div>
+                            </section>
+                            <div class="card__body1">
+                                <section class="card__footer">
+                                    <p class="card__title">Barbershop</p>
+                                    <p class="card__text">Сайт салона красоты. Для мужчин, да.</p>
+                                    <button class="card__btn" href="#">1000 $</button> 
+                                </section>   
+                            </ы>
+                        </section>
+                        <section class="card">
+                            <section class="card__top">
+                                <div class="circle"></div>
+                            </section>
+                            <div class="card__body2">
+                                <section class="card__footer">
+                                    <p class="card__title">A Plus</p>
+                                    <p class="card__text">Лендинг курсов повышения квалификации</p>
+                                    <button class="card__btn" href="#">1000 $</button> 
+                                </section> 
+                            </div>
+                        </section>
+                    </section>
+                    <section class="content__right">
+                        <section class="card">
+                            <section class="card__top">
+                                <div class="circle"></div>
+                            </section>
+                            <div class="card__body3">
+                                <section class="card__footer">
+                                    <p class="card__title">Pink app</p>
+                                    <p class="card__text">Продуктовый лендингприложения для iOS и Android</p>
+                                    <button class="card__btn" href="#">1000 $</button> 
+                                </section> 
+                            </div>
+                        </section>
+                        <section class="card">
+                            <section class="card__top">
+                                <div class="circle"></div>
+                            </section>
+                            <div class="card__body4">
+                                <section class="card__footer">
+                                    <p class="card__title">MISHKA</p>
+                                    <p class="card__text">Интернет-магазин вязаных игрушек</p>
+                                    <button class="card__btn" href="#">1000 $</button> 
+                                </section> 
+                            </div>
+                        </section>
+                        <section class="card">
+                            <section class="card__top">
+                                <div class="circle"></div>
+                            </section>
+                            <div class="card__body5">
+                                <section class="card__footer">
+                                    <p class="card__title">КВАС</p>
+                                    <p class="card__text">Промо-сайт производителя крафтового кваса</p>
+                                    <button class="card__btn" href="#">1000 $</button> 
+                                </section> 
+                            </div>
+                        </section>
+                    </section>
+                </section>
+            </section>   
         </section>
         <ul class="pagination">
             <li class="pagination__page pagination__page--active"><a href="#">1</a></li>
